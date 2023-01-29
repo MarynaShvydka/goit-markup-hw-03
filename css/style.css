@@ -129,12 +129,12 @@ body {
 
 /*======Header============*/
 .header {
+  padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
-.header.container {
+.header .container {
   display: flex;
   align-items: center;
-  padding: 24px 0;
-  border: 1px solid #e7e9fc;
 }
 .header-logo {
   font-family: var(--main-font-raleway);
@@ -251,6 +251,9 @@ address {
   display: flex;
   gap: 24px;
 }
+.container-benefits {
+  width: 264px;
+}
 
 /* ==============Main context==================*/
 .main-context {
@@ -277,6 +280,7 @@ address {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 32px;
 }
 .team-list > .card-thumb {
   flex-basis: calc(100% / 4);
@@ -287,15 +291,15 @@ address {
   margin-bottom: 32px;
 }
 /*===============Button-Portfolio====================*/
-.portfolio.container {
-  margin: auto;
+.portfolio.section {
+  padding-bottom: 120px;
+  padding-top: 96px;
 }
 .button-list {
   display: flex;
   justify-content: center;
   padding: 0px;
   gap: 24px;
-  padding-top: 96px;
   margin-bottom: 72px;
   text-align: center;
 }
@@ -329,11 +333,8 @@ address {
 .row-list {
   list-style: none;
   display: flex;
-  align-content: space-between;
   flex-wrap: wrap;
-  flex-basis: calc(100% / 3);
-  gap: 24px;
-  padding-bottom: 120px;
+  gap: 48px 24px;
 }
 .row {
   display: block;
@@ -344,17 +345,15 @@ address {
 }
 .row-text {
   border: 1px solid #e7e9fc;
-  margin-bottom: 8px;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
 }
 /*===================Footer====================*/
-.footer {
-  background: var(--navyblue-background-cl);
-}
 footer {
   padding-top: 100px;
   padding-bottom: 100px;
+  background: var(--navyblue-background-cl);
 }
 .footer-logo {
   font-family: var(--main-font-raleway);
